@@ -6,4 +6,4 @@ lint:shell-script:
   before_script:
     - shellcheck -V
   script:
-    - find bin -name "*" -exec shellcheck {} \;
+    - find bin -type f -name "*" -exec shellcheck {} \;
