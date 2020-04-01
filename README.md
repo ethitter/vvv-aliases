@@ -28,13 +28,13 @@ Run WP-CLI commands within Vagrant, returning the result before exiting the VM.
 Usage:
 
 ```bash
-user@MacBook:~/vvv/www/wordpress/public_html/wp-content$ wp option get home
+bob@MacBook:~/vvv/www/wordpress/public_html/wp-content$ wp option get home
 cd /srv/www/wordpress/public_html/wp-content; wp option get home
 
 https://www.wordpress.test
 
 Connection to 127.0.0.1 closed.
-user@MacBook:~/vvv/www/wordpress/public_html/wp-content$
+bob@MacBook:~/vvv/www/wordpress/public_html/wp-content$
 ```
 
 Note that if a command requires access to a file, the file must exist within the VM and the command must reference the file using its path within the VM.
@@ -48,7 +48,7 @@ Switch to the current directory within the VM.
 Usage:
 
 ```bash
-user@MacBook:~/vvv/www/wordpress/public_html/wp-content$ vcd
+bob@MacBook:~/vvv/www/wordpress/public_html/wp-content$ vcd
 
 vagrant@vvv:/srv/www/wordpress/public_html/wp-content$ wp option set test --format=json '{"1":true,"2":false}'
 
